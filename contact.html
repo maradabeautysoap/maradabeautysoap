@@ -3,87 +3,68 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Contact Marada Beauty Soap - Natural Tomato & Carrot Soap</title>
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&family=Open+Sans:wght@300;400&display=swap" rel="stylesheet">
+    <title>Contact Marada Beauty Soap</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&family=Open+Sans:wght@400&display=swap" rel="stylesheet">
     <style>
-        * {
+        body {
             margin: 0;
             padding: 0;
-            box-sizing: border-box;
             font-family: 'Open Sans', sans-serif;
-        }
-
-        body {
-            line-height: 1.6;
-            color: #333;
             background-color: #f9e8d9;
+            color: #333;
         }
-
         header {
             background-color: #fff;
-            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
             position: fixed;
             width: 100%;
             top: 0;
-            z-index: 1000;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
         }
-
         nav {
             max-width: 1200px;
-            margin: 0 auto;
+            margin: auto;
             padding: 15px 20px;
             display: flex;
             justify-content: space-between;
             align-items: center;
         }
-
         .logo {
             font-family: 'Poppins', sans-serif;
             font-size: 1.8rem;
-            font-weight: 600;
             color: #e74c3c;
         }
-
         nav ul {
             list-style: none;
             display: flex;
             gap: 20px;
         }
-
         nav ul li a {
             text-decoration: none;
             color: #333;
-            font-weight: 400;
         }
-
         nav ul li a:hover {
             color: #e74c3c;
         }
-
         .hero {
-            background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('https://maradabeautysoap7.wordpress.com/wp-content/uploads/2025/07/img_20250716_200244_270.jpg');
+            background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('https://i.imghippo.com/files/GDpF2129lQ.jpg');
             background-size: cover;
             background-position: center;
             height: 60vh;
             display: flex;
             align-items: center;
-            justify-content: center;
             text-align: center;
             color: #fff;
         }
-
         .hero-content h1 {
             font-family: 'Poppins', sans-serif;
             font-size: 2.5rem;
             margin-bottom: 20px;
         }
-
         .hero-content p {
             font-size: 1.1rem;
             max-width: 600px;
-            margin: 0 auto;
+            margin: auto;
         }
-
         .contact {
             max-width: 1200px;
             margin: 50px auto;
@@ -92,38 +73,31 @@
             background-color: #fff;
             border-radius: 10px;
         }
-
         .contact h2 {
             font-family: 'Poppins', sans-serif;
             font-size: 2rem;
             color: #e74c3c;
             margin-bottom: 20px;
         }
-
         .contact p {
             font-size: 1.1rem;
             color: #555;
             margin-bottom: 10px;
         }
-
         .contact a {
             color: #e67e22;
             text-decoration: none;
         }
-
         .contact a:hover {
             text-decoration: underline;
         }
-
         .contact img {
             width: 100%;
             max-width: 300px;
-            height: auto;
             border-radius: 10px;
             margin: 20px auto;
             display: block;
         }
-
         .social-links {
             display: flex;
             justify-content: center;
@@ -131,24 +105,17 @@
             margin: 20px 0;
             flex-wrap: wrap;
         }
-
-        .social-links a {
-            font-size: 1.1rem;
-        }
-
         .contact-form {
             max-width: 600px;
             margin: 20px auto;
             text-align: left;
         }
-
         .contact-form label {
             display: block;
             font-size: 1rem;
             color: #333;
             margin-bottom: 5px;
         }
-
         .contact-form input,
         .contact-form textarea {
             width: 100%;
@@ -156,14 +123,10 @@
             margin-bottom: 15px;
             border: 1px solid #ccc;
             border-radius: 5px;
-            font-size: 1rem;
         }
-
         .contact-form textarea {
             height: 150px;
-            resize: vertical;
         }
-
         .contact-form button {
             background-color: #e67e22;
             color: #fff;
@@ -171,15 +134,11 @@
             border: none;
             border-radius: 5px;
             font-family: 'Poppins', sans-serif;
-            font-weight: 600;
             cursor: pointer;
-            transition: background-color 0.3s;
         }
-
         .contact-form button:hover {
             background-color: #d35400;
         }
-
         .btn {
             background-color: #e67e22;
             color: #fff;
@@ -187,16 +146,11 @@
             text-decoration: none;
             border-radius: 5px;
             font-family: 'Poppins', sans-serif;
-            font-weight: 600;
-            transition: background-color 0.3s;
             display: inline-block;
-            margin-top: 20px;
         }
-
         .btn:hover {
             background-color: #d35400;
         }
-
         .testimonial {
             max-width: 1200px;
             margin: 50px auto;
@@ -205,68 +159,55 @@
             background-color: #fff;
             border-radius: 10px;
         }
-
         .testimonial h2 {
             font-family: 'Poppins', sans-serif;
             font-size: 2rem;
             color: #e74c3c;
             margin-bottom: 20px;
         }
-
         .testimonial blockquote {
             font-style: italic;
             font-size: 1.1rem;
             color: #555;
             margin-bottom: 10px;
         }
-
         .testimonial cite {
             font-size: 1rem;
             color: #e67e22;
         }
-
         footer {
             background-color: #333;
             color: #fff;
             text-align: center;
             padding: 20px;
         }
-
         footer p {
             font-size: 0.9rem;
         }
-
         footer a {
             color: #e67e22;
             text-decoration: none;
         }
-
         footer a:hover {
             text-decoration: underline;
         }
-
         @media (max-width: 768px) {
             .hero {
                 height: 50vh;
             }
-
             .hero-content h1 {
                 font-size: 2rem;
             }
-
             .hero-content p {
                 font-size: 1rem;
             }
-
             .contact img {
                 max-width: 250px;
             }
-
             .social-links {
                 flex-direction: column;
                 gap: 10px;
             }
-
             .contact-form {
                 padding: 0 10px;
             }
@@ -276,7 +217,6 @@
 <body>
     <header>
         <nav>
-            <!-- Logo: Replace with image-based logo when provided (e.g., <img src="logo.png" alt="Marada Beauty Soap Logo" class="logo-img">) -->
             <div class="logo">Marada Beauty Soap</div>
             <ul>
                 <li><a href="home.html">Home</a></li>
@@ -286,18 +226,16 @@
             </ul>
         </nav>
     </header>
-
-    <section class="hero" id="contact">
+    <section class="hero">
         <div class="hero-content">
             <h1>Contact Marada Beauty Soap</h1>
             <p>Connect with us for inquiries, orders, or to join our natural skincare community!</p>
         </div>
     </section>
-
     <section class="contact">
         <h2>Get in Touch</h2>
         <p>Have questions about our NAFDAC-approved, natural tomato, carrot, and yogurt soap? Ready to place an order? We’re here to help!</p>
-        <img src="https://maradabeautysoap7.wordpress.com/wp-content/uploads/2025/07/1000110922.jpg" alt="Single Marada Beauty Soap">
+        <img src="https://i.imghippo.com/files/HNT8227DM.jpg" alt="Single Marada Beauty Soap">
         <p><strong>Address:</strong> Shelter Afrique Estate, opposite VKS Company, Plot 25B, Chris Ekpenyong Street, Uyo, Akwa Ibom</p>
         <p><a href="https://maps.app.goo.gl/XNHSH1p8rNEv1exB8?g_st=ac" target="_blank">View on Google Maps</a></p>
         <p><strong>WhatsApp Chat:</strong> <a href="https://wa.me/2348033746643">+2348033746643</a></p>
@@ -323,7 +261,6 @@
         </form>
         <a href="https://wa.me/2348033746643" class="btn">Order Now</a>
     </section>
-
     <section class="testimonial">
         <h2>What Our Customers Say</h2>
         <blockquote>
@@ -331,7 +268,6 @@
         </blockquote>
         <cite>— Wisdom</cite>
     </section>
-
     <footer>
         <p>© 2025 Marada Beauty Soap. All rights reserved. | <a href="https://wa.me/2348033746643">Contact Us: +2348033746643</a></p>
     </footer>

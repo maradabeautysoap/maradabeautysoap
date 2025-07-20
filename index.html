@@ -3,86 +3,67 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Marada Beauty Soap - Natural Tomato & Carrot Soap</title>
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&family=Open+Sans:wght@300;400&display=swap" rel="stylesheet">
+    <title>Marada Beauty Soap</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&family=Open+Sans:wght@400&display=swap" rel="stylesheet">
     <style>
-        * {
+        body {
             margin: 0;
             padding: 0;
-            box-sizing: border-box;
             font-family: 'Open Sans', sans-serif;
-        }
-
-        body {
-            line-height: 1.6;
-            color: #333;
             background-color: #f9e8d9;
+            color: #333;
         }
-
         header {
             background-color: #fff;
-            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
             position: fixed;
             width: 100%;
             top: 0;
-            z-index: 1000;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
         }
-
         nav {
             max-width: 1200px;
-            margin: 0 auto;
+            margin: auto;
             padding: 15px 20px;
             display: flex;
             justify-content: space-between;
             align-items: center;
         }
-
         .logo {
             font-family: 'Poppins', sans-serif;
             font-size: 1.8rem;
-            font-weight: 600;
             color: #e74c3c;
         }
-
         nav ul {
             list-style: none;
             display: flex;
             gap: 20px;
         }
-
         nav ul li a {
             text-decoration: none;
             color: #333;
-            font-weight: 400;
         }
-
         nav ul li a:hover {
             color: #e74c3c;
         }
-
         .hero {
-            background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('https://maradabeautysoap7.wordpress.com/wp-content/uploads/2025/07/img_20250716_200244_270.jpg');
+            background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('https://i.imghippo.com/files/GDpF2129lQ.jpg');
             background-size: cover;
             background-position: center;
             height: 100vh;
             display: flex;
             align-items: center;
-            justify-content: center;
             text-align: center;
             color: #fff;
         }
-
         .hero-content h1 {
             font-family: 'Poppins', sans-serif;
             font-size: 3rem;
             margin-bottom: 20px;
         }
-
         .hero-content p {
             font-size: 1.2rem;
             margin-bottom: 30px;
         }
-
         .btn {
             background-color: #e67e22;
             color: #fff;
@@ -90,52 +71,38 @@
             text-decoration: none;
             border-radius: 5px;
             font-family: 'Poppins', sans-serif;
-            font-weight: 600;
-            transition: background-color 0.3s;
         }
-
         .btn:hover {
             background-color: #d35400;
         }
-
         .hero-btn {
             font-size: 1.2rem;
             padding: 15px 30px;
             border: 2px solid #fff;
         }
-
-        .hero-btn:hover {
-            background-color: #d35400;
-            border-color: #e74c3c;
-        }
-
         .product {
             max-width: 1200px;
             margin: 50px auto;
             padding: 20px;
             text-align: center;
         }
-
         .product h2 {
             font-family: 'Poppins', sans-serif;
             font-size: 2.5rem;
             color: #e74c3c;
             margin-bottom: 20px;
         }
-
         .product p {
             font-size: 1.1rem;
             margin-bottom: 30px;
             color: #555;
         }
-
         .product-details {
             display: flex;
             justify-content: center;
             gap: 40px;
             flex-wrap: wrap;
         }
-
         .product-card {
             background-color: #fff;
             padding: 20px;
@@ -143,32 +110,18 @@
             width: 300px;
             box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
         }
-
-        .product-card-title {
-            font-family: 'Poppins', sans-serif;
-            font-size: 1.5rem;
-            font-weight: 600;
-            color: #e74c3c;
-            text-align: center;
-            margin-bottom: 10px;
-        }
-
         .product-card img {
             width: 100%;
             max-width: 250px;
-            height: auto;
             border-radius: 5px;
             margin-bottom: 15px;
-            display: block;
-            margin-left: auto;
-            margin-right: auto;
         }
-
-        .product-card p {
-            font-size: 1rem;
-            color: #333;
+        .product-card h3 {
+            font-family: 'Poppins', sans-serif;
+            font-size: 1.5rem;
+            color: #e74c3c;
+            margin-bottom: 10px;
         }
-
         .testimonial {
             max-width: 1200px;
             margin: 50px auto;
@@ -177,65 +130,53 @@
             background-color: #fff;
             border-radius: 10px;
         }
-
         .testimonial h2 {
             font-family: 'Poppins', sans-serif;
             font-size: 2rem;
             color: #e74c3c;
             margin-bottom: 20px;
         }
-
         .testimonial blockquote {
             font-style: italic;
             font-size: 1.1rem;
             color: #555;
             margin-bottom: 10px;
         }
-
         .testimonial cite {
             font-size: 1rem;
             color: #e67e22;
         }
-
         footer {
             background-color: #333;
             color: #fff;
             text-align: center;
             padding: 20px;
         }
-
         footer p {
             font-size: 0.9rem;
         }
-
         footer a {
             color: #e67e22;
             text-decoration: none;
         }
-
         footer a:hover {
             text-decoration: underline;
         }
-
         @media (max-width: 768px) {
             .hero-content h1 {
                 font-size: 2rem;
             }
-
             .hero-content p {
                 font-size: 1rem;
             }
-
             .hero-btn {
                 font-size: 1rem;
                 padding: 10px 20px;
             }
-
             .product-details {
                 flex-direction: column;
                 align-items: center;
             }
-
             .product-card img {
                 max-width: 200px;
             }
@@ -245,7 +186,6 @@
 <body>
     <header>
         <nav>
-            <!-- Logo: Replace with image-based logo when provided (e.g., <img src="logo.png" alt="Marada Beauty Soap Logo" class="logo-img">) -->
             <div class="logo">Marada Beauty Soap</div>
             <ul>
                 <li><a href="home.html">Home</a></li>
@@ -255,36 +195,33 @@
             </ul>
         </nav>
     </header>
-
-    <section class="hero" id="home">
+    <section class="hero">
         <div class="hero-content">
             <h1>Marada Beauty Soap</h1>
             <p>Nourish Your Skin with Nature’s Finest Tomato, Carrot, and Yogurt</p>
             <a href="https://wa.me/2348033746643" class="btn hero-btn">Order Now</a>
         </div>
     </section>
-
-    <section class="product" id="about">
+    <section class="product">
         <h2>Discover Marada Beauty Soap</h2>
         <p>Crafted from natural whole tomato, carrot, and yogurt, Marada Beauty Soap is moisturizing, foams well, and brings out your natural skin glow. Perfect for everyone, regardless of age or skin type.</p>
         <div class="product-details">
             <div class="product-card">
-                <img src="https://maradabeautysoap7.wordpress.com/wp-content/uploads/2025/07/1000110922.jpg" alt="Single Marada Beauty Soap">
-                <p class="product-card-title">Single Pack</p>
+                <img src="https://i.imghippo.com/files/HNT8227DM.jpg" alt="Single Marada Beauty Soap">
+                <h3>Single Pack</h3>
                 <p>Price: ₦1,000</p>
                 <p>Experience the gentle, hydrating benefits of Marada soap.</p>
                 <a href="https://wa.me/2348033746643" class="btn">Buy Now</a>
             </div>
             <div class="product-card">
-                <img src="https://maradabeautysoap7.wordpress.com/wp-content/uploads/2025/07/img_20250717_080828_424.jpg" alt="Pack of 6 Marada Beauty Soaps">
-                <p class="product-card-title">Pack of 6</p>
+                <img src="https://i.imghippo.com/files/gUOS1461Ls.jpg" alt="Pack of 6 Marada Beauty Soaps">
+                <h3>Pack of 6</h3>
                 <p>Price: ₦5,000</p>
                 <p>Great value for long-term skin care with natural ingredients.</p>
                 <a href="https://wa.me/2348033746643" class="btn">Buy Now</a>
             </div>
         </div>
     </section>
-
     <section class="testimonial">
         <h2>What Our Customers Say</h2>
         <blockquote>
@@ -292,7 +229,6 @@
         </blockquote>
         <cite>— Wisdom</cite>
     </section>
-
     <footer>
         <p>© 2025 Marada Beauty Soap. All rights reserved. | <a href="https://wa.me/2348033746643">Contact Us: +2348033746643</a></p>
     </footer>
